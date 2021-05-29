@@ -4,6 +4,8 @@
   --contacts-and-discriptions-color: #757575;
   --footer-and-background-color: #2f303a;
   --team-and-portfolio-buttoms-backgrounds: #f5f4fa;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -159,13 +161,30 @@ img {
   padding-bottom: 32px;
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  position: relative;
+}
+
+.current-menu-item-link::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-color);
 }
 
 .menu-item-link:hover,
 .menu-item-link:focus,
-.current {
+.current,
+.current-menu-item-link {
   color: var(--hover-color);
 }
 
@@ -181,8 +200,8 @@ img {
   align-items: center;
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .header-contacts-mail-link {
@@ -240,6 +259,7 @@ img {
     url(../images/hero/Img.jpg);
   background-size: cover;
   max-width: 1600px;
+  margin: auto;
 }
 
 .hero-title {
@@ -281,8 +301,8 @@ img {
   cursor: pointer;
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 /*hero end*/
@@ -430,6 +450,21 @@ img {
 
 .team-list-item-photo {
   /*  margin-bottom: 30px; */
+  position: relative;
+}
+
+.about-list-item-photo::before {
+  display: inline-block;
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  opacity: 0;
 }
 
 .team-list-item-dicription {
@@ -472,8 +507,8 @@ img {
   fill: #afb1b8;
 
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .social-list-link {
@@ -486,8 +521,8 @@ img {
   border-radius: 50%;
 
   transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .social-list-link:hover,
@@ -542,6 +577,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition-property: border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .clients-section-list-item {
@@ -554,6 +593,10 @@ img {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .clients-section-list-link:hover,
@@ -659,6 +702,10 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition-property: background;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .social-links-footer-list-item-icon {
@@ -742,6 +789,10 @@ img {
 
   border: none;
   border-radius: 5px;
+
+  transition-property: color, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 .portfolio-item :hover,
 .portfolio-item:focus {
