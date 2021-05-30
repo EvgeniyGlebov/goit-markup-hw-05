@@ -890,6 +890,8 @@ padding-left: 24px;
 overflow: auto;
 transform: translateY(100%);
 
+transition: transform 250ms, linear;
+
 
 }
 
