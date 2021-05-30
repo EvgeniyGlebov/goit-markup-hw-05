@@ -899,6 +899,12 @@ img {
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition: opacity 250ms linear, vissbility 250ms linear;
 }
 
 .modal {
