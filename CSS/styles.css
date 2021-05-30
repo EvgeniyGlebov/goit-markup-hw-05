@@ -867,7 +867,7 @@ align-items: center;
 
 .portfolio-photofilter-list-item-photo:hover .portfolio-overlay,
 .portfolio-photofilter-list-item-photo:focus .portfolio-overlay {
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 .portfolio-overlay {
