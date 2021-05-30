@@ -865,8 +865,9 @@ align-items: center;
   color: var(--contacts-and-discriptions-color);
 }
 
-.portfolio-photofilter-list-item {
-  position: relative;
+.portfolio-photofilter-list-item-photo:hover .portfolio-overlay,
+.portfolio-photofilter-list-item-photo:focus .portfolio-overlay {
+  transform: translateY(100%);
 }
 
 .portfolio-overlay {
@@ -874,12 +875,27 @@ align-items: center;
   top: 0;
   left: 0;
     width: 100%;
-    height: 294px;
+    height: 100%;
+   
+font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
 
   color: #ffffff;
 background-color: rgb(33, 150, 243, 0.5);
-padding: 24px;
+padding-top: 63px;
+padding-right: 24px;
+padding-left: 24px;
 
+overflow: auto;
+transform: translateY(100%);
+
+
+}
+
+.div-portfolio-overlay {
+  position: relative;
+  overflow: hidden;
 }
 
 
