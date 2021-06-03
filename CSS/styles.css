@@ -785,6 +785,10 @@ img {
 
   width: 270px;
   border: 1px;
+
+  transition-property: box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .portfolio-photofilter-list-item:hover,
@@ -881,7 +885,7 @@ img {
   overflow: auto;
   transform: translateY(100%);
 
-  transition: transform, 250ms, linear;
+  transition: transform 250ms linear;
 }
 
 .div-portfolio-overlay {
