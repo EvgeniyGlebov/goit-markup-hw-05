@@ -877,7 +877,7 @@ img {
   line-height: 1.5;
 
   color: #ffffff;
-  background-color: rgb(33, 150, 243, 0.5);
+  background-color: rgb(33, 150, 243, 0.9);
   padding-top: 63px;
   padding-right: 24px;
   padding-left: 24px;
@@ -925,6 +925,9 @@ img {
 }
 
 .modal-close-btn {
+  display: flex;
+  justify-content: center;
+
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -939,6 +942,7 @@ img {
 .modal-close-btn-svg {
   width: 11px;
   height: 11px;
+  align-items: center;
 }
 
 .is-hidden {
