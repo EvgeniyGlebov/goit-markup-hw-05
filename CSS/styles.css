@@ -936,6 +936,10 @@ img {
   right: 8px;
   padding: 0;
 }
+.modal-close-btn-svg {
+  width: 11px;
+  height: 11px;
+}
 
 .is-hidden {
   opacity: 0;
