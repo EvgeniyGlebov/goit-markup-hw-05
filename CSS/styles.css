@@ -928,8 +928,8 @@ img {
   display: flex;
   justify-content: center;
 
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -940,9 +940,9 @@ img {
   padding: 0;
 }
 .modal-close-btn-svg {
+  -ms-text-combine-horizontal: #000;
   width: 11px;
   height: 11px;
-  align-items: center;
 }
 
 .is-hidden {
